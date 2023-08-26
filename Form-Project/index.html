@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VendaPc</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="pc.icon" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h3>Trocas e Rolos</h3>
+                <h4>By gamers, for gamers.</h4>
+            </div>
+            <div class="form-container">
+                <div class="form-header">
+                    <p>Formulário</p>
+                </div>
+                <div class="form-body">
+                    <h1 class="fomr-title">Venda seu PC Gamer!</h1>
+                    <p>Descreva as características e marque os opcionais que ele possui</p>
+                    <form>
+                        <div class="box-input">
+                            <label for="title">
+                                Título do anúncio <span class="required-field">*</span>
+                            </label>
+                            <input type="text" name="title" id="title" placeholder="Um título para anunciar seu PC" minlength="1" maxlength="30" required>
+                        </div>
+                        <div class="box-input">
+                            <label for="price">
+                                Preço <span class="required-field">*</span>
+                            </label>
+                            <input type="number" name="price" id="price" class="block" placeholder="Defina um preço" minlength="1" maxlength="30" required>
+                        </div>
+                        <div class="box-input">
+                            <label for="description">
+                                Descrição <span class="required-field">*</span>
+                            </label>
+                            <textarea name="description" id="description" class="block" placeholder="Aqui você coloca os detalhes do PC, por exemplo: se ele possui algum mal contato|"></textarea>
+                        </div>
+                        <div class="box-input">
+                            <label for="processor">
+                                Processador <span class="required-field">*</span>
+                            </label>
+                            <input type="text" name="processor" id="processor" placeholder="Digite o nome do processador" required>
+                        </div>
+                        <div class="box-input">
+                            <label for="hd">
+                                Memória interna <span class="required-field">*</span>
+                            </label>
+                            <input type="text" name="hd" id="hd" placeholder="ex: ssd 500GB" required>
+                        </div>
+                        <div class="box-input">
+                            <label for="vram">
+                                Placa de Vídeo <span class="required-field">*</span>
+                            </label>
+                            <input type="number" name="vram" id="vram" placeholder="ex:GTX 1050 Ti" minlength="1" maxlength="30" required>
+                        </div>
+                        <div class="box-input">
+                            <label for="purchase-date">
+                                Data de compra <span class="required-field">*</span>
+                            </label>
+                            <input type="date" name="purchase-date" id="purchase-date" class="block" required>
+                        </div>
+                        <div class="box-input">
+                            <p>Ideal para: <span class="required-field">*</span></p>
+                            <input type="radio" name="gear" id="games">
+                            <label for="manual">Jogos</label>
+                            <input type="radio" name="gear" id="work">
+                            <label for="automatico">Trabalho</label>
+                        </div>
+                        <div class="optional-box">
+                            <p>Games testados</p>
+                            <ul class="optional-list">
+                                <li>
+                                    <input type="checkbox" id="fortnite" name="optional[]" value="fortnite">
+                                    <label for="fortnite">Fortnit</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="eldenring" name="optional[]" value="eldenring">
+                                    <label for="eldenring">Elden Ring</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="gta" name="optional[]" value="gta">
+                                    <label for="gta">GTA V</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="gow" name="optional[]" value="gow">
+                                    <label for="gow">God of War</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="hogwarts" name="optional[]" value="hogwarts">
+                                    <label for="hogwarts">Hogwarts Legacy</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="optional-box">
+                            <ul class="optional-list">
+                                <li>
+                                    <input type="checkbox" id="forza" name="optional[]" value="forza">
+                                    <label for="forza">Forza Horizon 5</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="overwatch" name="optional[]" value="overwatch">
+                                    <label for="overwatch">Overwatch 2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fifa" name="optional[]" value="fifa">
+                                    <label for="fifa">FIFA 23</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="reddead" name="optional[]" value="reddead">
+                                    <label for="reddead">Red Dead Redemption II</label>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="box-input">
+                            <p>Fotos do PC: <span class="required-field">*</span></p>
+                            <input type="file" multiple accept="image/png, image/jpg" name="images" id="images" required>
+                        </div>
+                        <input type="submit" value="Enviar" class="btn-submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
